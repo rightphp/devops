@@ -1,0 +1,297 @@
+[root@live-tr-laravel myapp]# history | grep fastapi
+  430  docker pull tiangolo/uvicorn-gunicorn-fastapi:python3.8-alpine3.10-2020-12-19
+  445  docker build -t fastapi .
+  447  docker run -d --name fastapi -p 8088:80 fastapi
+  453  docker exec -it fastapi sh
+  455  docker exec -it fastapi sh
+  459  docker container stop fastapi
+  460  docker container rm fastapi
+  463  history | grep fastapi
+  464  docker run -d --name fastapi -p 8088:80 fastapi
+  465  docker container stop fastapi
+  466  docker container rm fastapi
+  467  docker image rm fastapi
+  468  docker build -t fastapi .
+  471  docker build -t fastapi .
+  472  docker run -d --name fastapi -p 8088:80 fastapi
+  473  docker logs fastapi
+  474  docker stop fastapi
+  475  docker rm fastapi
+  476  docker image rm fastapi
+  478  docker build -t fastapi .
+  482  docker run -d --name fastapi -p 8088:80 -v ./app:/app fastapi
+  483  docker run -d --name fastapi -p 8088:80 -v app:/app fastapi
+  486  docker logs fastapi
+  488  docker logs fastapi
+  494  docker container stop fastapi
+  495  docker container start fastapi
+  496  history | grep fastapi
+  497  docker container stop fastapi
+  503  docker container start fastapi
+  505  docker contaigner logs fastapi
+  506  docker logs fastapi
+  507  docker container stop fastapi
+  508  docker container rm fastapi
+  510  docker run -d --name fastapi -p 8088:80 -v app:/app fastapi
+  511  docker exec -it fastapi bash
+  512  docker exec -it fastapi sh
+  514  docker container stop fastapi
+  515  docker container rm fastapi
+  516  docker run -d --name fastapi -p 8088:80 -v "$(pwd)/app:/app" fastapi
+  517  docker exec -it fastapi sh
+  518  docker contaner stop fastapi
+  523  docker container start fastapi
+  525  docker container stop fastapi
+  526  docker container rm fastapi
+  527  docker run -d --name fastapi -p 8088:80 -v "$(pwd)/app/main.py:/app/main.py" fastapi
+  528  docker container rm fastapi
+  530  docker run -d --name fastapi -p 8088:80 -v "$(pwd)/app/main.py:/app/main.py" fastapi
+  531  docker logs fastapi
+  534  docker container stop fastapi
+  535  docker container start fastapi
+  536  docker logs fastapi
+  545  docker container stop fastapi
+  546  docker container rm fastapi
+  549  history | grep fastapi
+  550  run -d --name fastapi -p 8088:80 -v "$(pwd)/app/mysql:/app" fastapi
+  551  docker run -d --name fastapi -p 8088:80 -v "$(pwd)/app/mysql:/app" fastapi
+  552  docker logs fastapi
+  553  docker exec -it fastapi sh
+  554  docker container rm fastapi
+  555  docker run  --name fastapi -p 8088:80 -v "$(pwd)/app/mysql:/app" fastapi
+  556  docker container rm fastapi
+  557  docker run -d  --name fastapi -p 8088:80 -v "$(pwd)/app:/app" fastapi
+  558  docker exec -it fastapi sh
+  559  docker container rm fastapi
+  565  docker run -d  --name fastapi -p 8088:80 -v "$(pwd)/app:/app" fastapi
+  566  docker exec -it fastapi sh
+  568  docker container stop fastapi
+  569  docker container rm fastapi
+  570  docker run -d  --name fastapi -p 8088:80 -v "$(pwd)/app/mysql:/app" fastapi
+  571  docker logs fastapi
+  572  docker container rm fastapi
+  574  docker image rm fastapi
+  575  docker rm fastapi
+  576  docker image rm fastapi
+  577  docker build -t fastapi .
+  578  docker run -d  --name fastapi -p 8088:80 -v "$(pwd)/app/mysql:/app" fastapi
+  579  docker logs fastapi
+  582  docker exec -it fastapi sh
+  584  docker container rm fastapi
+  585  docker run -d  --name fastapi -p 8088:80 -v "$(pwd)/app/mysql:/app" fastapi
+  586  docker logs fastapi
+  587  docker container rm fastapi
+  600  docker run -d  --name fastapi -p 8088:80 -v "$(pwd)/app/mysql:/app" fastapi
+  601  docker logs fastapi
+  603  docker container rm fastapi
+  609  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  610  docker logs fastapi
+  612  docker container rm fastapi
+  613  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  614  docker logs fastapi
+  616  docker container rm fastapi
+  617  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  618  docker logs fastapi
+  620  docker container rm fastapi
+  621  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  622  docker logs fastapi
+  624  docker container rm fastapi
+  625  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  626  docker logs fastapi
+  628  docker container rm fastapi
+  629  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  630  docker logs fastapi
+  633  docker container rm fastapi
+  634  docker rm fastapi
+  635  docker image rm fastapi
+  637  docker build -t fastapi .
+  638  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  639  docker logs fastapi
+  644  docker container rm fastapi
+  645  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  646  docker logs fastapi
+  648  docker container rm fastapi
+  649  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  650  docker logs fastapi
+  654  docker container rm fastapi
+  655  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  656  docker logs fastapi
+  658  docker container rm fastapi
+  659  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  660  docker logs fastapi
+  663  docker container rm fastapi
+  664  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  665  docker logs fastapi
+  667  docker container rm fastapi
+  668  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  669  docker logs fastapi
+  671  docker container rm fastapi
+  672  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  673  docker logs fastapi
+  681  docker container rm fastapi
+  682  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  683  docker logs fastapi
+  685  docker container rm fastapi
+  686  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  687  docker logs fastapi
+  688  docker container rm fastapi
+  689  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  690  docker logs fastapi
+  692  docker container rm fastapi
+  693  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  694  docker logs fastapi
+  696  docker container rm fastapi
+  697  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  698  docker logs fastapi
+  699  docker container stop fastapi
+  700  docker container rm fastapi
+  701  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  702  docker logs fastapi
+  704  docker container stop fastapi
+  705  docker container rm fastapi
+  706  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  707  docker logs fastapi
+  712  docker container stop fastapi
+  713  docker container rm fastapi
+  714  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/mysql:/app" fastapi
+  715  docker logs fastapi
+  729  cd myapp/app/fastapi-mongo/
+  740  cd app/fastapi-mongo/app/server/
+  744  docker exec -it fastapi sh
+  749  docker image rm fastapi
+  750  docker build -t fastapi .
+  751  docker container stop fastapi
+  752  docker container rm fastapi
+  753  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" fastapi
+  754  docker logs fastapi
+  755  vi app/fastapi-mongo/app/main.py
+  756  vi app/fastapi-mongo/app/server/
+  757  vi app/fastapi-mongo/app/server/main.py
+  758  docker container stop fastapi
+  759  docker container rm fastapi
+  760  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" fastapi
+  761  docker logs fastapi
+  762  vi app/fastapi-mongo/app/server/routes/contact.py
+  763  docker container stop fastapi
+  764  docker container rm fastapi
+  765  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" fastapi
+  766  docker logs fastapi
+  767  vi app/fastapi-mongo/app/server/routes/contact.py
+  768  docker container stop fastapi
+  769  docker container rm fastapi
+  770  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" fastapi
+  771  docker logs fastapi
+  772  vi app/fastapi-mongo/app/server/routes/contact.py
+  773  docker container stop fastapi
+  774  docker container rm fastapi
+  775  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" fastapi
+  776  docker logs fastapi
+  778  docker logs fastapi
+  788  cat > fastapi.conf
+  790  cat fastapi.conf
+  792  docker logs fastapi
+  797  docker logs fastapi
+  801  docker logs fastapi
+  802  docker exec -it fastapi sh
+  805  docker logs fastapi
+  815  vi /root/myapp/app/fastapi-mongo/app/server/main.py
+  816  docker container stop fastapi
+  817  docker container rm fastapi
+  818  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" fastapi
+  819  docker logs fastapi
+  820  vi /root/myapp/app/fastapi-mongo/app/server/routes/contact.py
+  821  vi /root/myapp/app/fastapi-mongo/app/server/routes/person.py
+  822  docker container stop fastapi
+  823  docker container rm fastapi
+  824  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" fastapi
+  825  docker logs fastapi
+  835  cd fastapi-mongo/
+  839  docker image rm fastapi
+  840  docker container stop fastapi
+  841  docker container rm fastapi
+  842  docker image rm fastapi
+  843  docker build -t fastapi .
+  844  ls -la /root/myapp/app/fastapi-mongo/app/server
+  845  cat /root/myapp/app/fastapi-mongo/app/server/main.py
+  846  rm /root/myapp/app/fastapi-mongo/app/server/main.py
+  847  mv /root/myapp/app/fastapi-mongo/app/server/app.py /root/myapp/app/fastapi-mongo/app/server/main.py
+  848  ls -la /root/myapp/app/fastapi-mongo/app/server
+  849  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" fastapi
+  850  docker logs fastapi
+  851  vi /root/myapp/app/fastapi-mongo/app/server/main.py
+  853  docker container stop fastapi
+  854  docker container rm fastapi
+  855  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" fastapi
+  856  docker logs fastapi
+  857  cd myapp/app/fastapi-mysql/
+  862  docker container stop fastapi
+  863  docker container rm fastapi
+  864  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mysql:/app" fastapi
+  865  docker logs fastapi
+  866  docker container stop fastapi
+  867  docker container rm fastapi
+  868  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" fastapi
+  869  docker logs fastapi
+  870  docker exec -it fastapi sh
+  871  docker logs fastapi
+  872  docker container stop fastapi
+  873  docker container rm fastapi
+  874  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" LOG_LEVEL="debug" fastapi
+  875  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" -e LOG_LEVEL="debug" fastapi
+  876  docker logs fastapi
+  877  docker exec -it fastapi sh
+  878  docker logs fastapi
+  879  docker container stop fastapi
+  880  docker container start fastapi
+  881  docker logs fastapi
+  882  docker exec -it fastapi sh
+  883  cd myapp/app/fastapi-mongo/
+  896  docker container stop fastapi
+  897  docker container rm fastapi
+  898  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" -e LOG_LEVEL="debug" fastapi
+  899  docker logs fastapi
+  900  vi app/fastapi-mongo/app/server/routes/person.py
+  901  docker container stop fastapi
+  902  docker container rm fastapi
+  903  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" -e LOG_LEVEL="debug" fastapi
+  904  docker logs fastapi
+  905  cat > app/fastapi-mongo/app/server/models/person.py
+  906  cat > app/fastapi-mongo/app/server/routes/person.py
+  907  docker container stop fastapi
+  908  docker container rm fastapi
+  909  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" fastapi
+  910  docker logs fastapi
+  911  cat > app/fastapi-mongo/app/server/routes/person.py
+  912  docker container stop fastapi
+  913  docker container rm fastapi
+  914  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" fastapi
+  915  docker logs fastapi
+  916  cat > app/fastapi-mongo/app/server/routes/person.py
+  917  docker container stop fastapi
+  918  docker container rm fastapi
+  919  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" -e LOG_LEVEL="debug" fastapi
+  920  docker logs fastapi
+  921  cat > app/fastapi-mongo/app/server/routes/person.py
+  922  cat > app/fastapi-mongo/app/server/models/person.py
+  923  docker container stop fastapi
+  924  docker container rm fastapi
+  925  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" -e LOG_LEVEL="debug" fastapi
+  926  docker logs fastapi
+  927  cat > app/fastapi-mongo/app/server/models/person.py
+  928  cat > app/fastapi-mongo/app/server/models/contact.py
+  929  docker container stop fastapi
+  930  docker container rm fastapi
+  931  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" -e LOG_LEVEL="debug" fastapi
+  932  docker logs fastapi
+  933  docker container stop fastapi
+  934  docker container rm fastapi
+  935  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" fastapi
+  936  docker logs fastapi
+  942  cd fastapi-mongo/
+  955  vi /root/myapp/app/fastapi-mongo/app/server/routes/contact.py
+  956  docker container stop fastapi
+  957  docker container rm fastapi
+  958  docker run -d  --name fastapi -p 8088:80 -v "/root/myapp/app/fastapi-mongo/app/server:/app" fastapi
+  959  docker logs fastapi
+  962  docker container start tr-testing-redis tr-testing-rabbit crm-staging-fpm crm-staging-nginx fastapi tr-testing-apm tr-testing-fpm tr-testing-queue tr-testing-scheduler tr-testing-nginx
+ 1010  history | grep fastapi
