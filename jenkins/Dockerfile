@@ -3,20 +3,22 @@ USER root
      
 # Install system dependencies
 RUN apt-get update && apt-get install -y curl wget openssl libssl-dev gnupg2 ca-certificates lsb-release apt-transport-https
+
+# Install PHP 7 for PHP Projects
 RUN wget https://packages.sury.org/php/apt.gpg
 RUN apt-key add apt.gpg
 RUN echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php7.list
 RUN apt-get update && apt-get install -y php7.4 php7.4-mbstring php7.4-xml php7.4-pdo php7.4-pdo-mysql php7.4-xdebug
 
-
-RUN cd /tmp
-RUN curl -sS https://getcomposer.org/installer | php
-RUN mv composer.phar /usr/local/bin/composer
+#install dependency manager for PHP
+#RUN cd /tmp
+#RUN curl -sS https://getcomposer.org/installer | php
+#RUN mv composer.phar /usr/local/bin/composer
 
 #install NPM for react build
 # Using Debian, as root
-RUN curl -sL https://deb.nodesource.com/setup_15.x | bash -
-RUN apt-get install -y npm
+#RUN curl -sL https://deb.nodesource.com/setup_15.x | bash -
+#RUN apt-get install -y npm
 
 #this is required to run docker commands to build images and push into registry, just docker client
 ARG DOCKER_CLIENT=docker-18.06.3-ce.tgz
