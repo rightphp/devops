@@ -7,4 +7,4 @@ FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8-alpine3.10-2020-12-19
 RUN pip install --no-cache-dir fastapi
 
 #COPY ./fastapi-mongo /app
-COPY ./fastapideta /app
+COPY ./fastapi/fastapideta /app
