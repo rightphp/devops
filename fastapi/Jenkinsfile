@@ -29,7 +29,9 @@ pipeline {
 
 	stage('run') {
             steps {
-                docker.image(imageFastAPI).run("--name $JOB_NAME-fastapi")
+	       script {
+                  docker.image(imageFastAPI).run("--name $JOB_NAME-fastapi")
+	       }
             }
         }
     }
