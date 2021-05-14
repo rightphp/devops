@@ -12,7 +12,7 @@ pipeline {
         stage('build') {
             steps {
 	       script {
-                  def image = docker.build( imageFastAPI + ":$BUILD_NUMBER", '-f fastapi/Dockerfile .')
+                  image = docker.build( imageFastAPI + ":$BUILD_NUMBER", '-f fastapi/Dockerfile .')
 	       }
             }
         }
