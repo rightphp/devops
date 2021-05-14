@@ -1,10 +1,33 @@
 pipeline {
-    agent { docker { image 'python:3.5.1' } }
+    environment {
+        BRANCH = "${env.GIT_BRANCH}"
+        registryCredential = 'DOCKER-HUB-ACCESS'
+        imageFastAPI = "krishangopal/$JOB_NAME-fastapi"
+
+    }
+
+    agent any
+
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
+                def image = docker.build( imageFastAPI + ":$BUILD_NUMBER", '-f fastapi/Dockerfile .')
+            }
+        }
+
+	stage('push') {
+            steps {
+                docker.withRegistry( '', registryCredential ) {
+		    image.push('latest')
+                }
+            }
+        }
+
+	stage('run') {
+            steps {
+                docker.image(imageFastAPI).run("--name $JOB_NAME-fastapi")
             }
         }
     }
+
 }
