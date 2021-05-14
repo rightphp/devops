@@ -30,7 +30,10 @@ pipeline {
 	stage('run') {
             steps {
 	       script {
-                  docker.image(imageFastAPI).run("--name $JOB_NAME-fastapi")
+	          sh "docker ps -f name=$JOB_NAME-fastapi -q | xargs --no-run-if-empty docker container stop"
+		  sh "docker container ls -a -fname=$JOB_NAME-fastapi -q | xargs --no-run-if-empty docker container rm"
+
+                  docker.image(imageFastAPI).run("--name $JOB_NAME-fastapi -p 8002:80")
 	       }
             }
         }
