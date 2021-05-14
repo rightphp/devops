@@ -11,15 +11,19 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                def image = docker.build( imageFastAPI + ":$BUILD_NUMBER", '-f fastapi/Dockerfile .')
+	       script {
+                  def image = docker.build( imageFastAPI + ":$BUILD_NUMBER", '-f fastapi/Dockerfile .')
+	       }
             }
         }
 
 	stage('push') {
             steps {
-                docker.withRegistry( '', registryCredential ) {
-		    image.push('latest')
-                }
+	       script {
+                   docker.withRegistry( '', registryCredential ) {
+		      image.push('latest')
+                   }
+	       }
             }
         }
 
