@@ -6,7 +6,7 @@ pipeline {
 
 	SCANNER_HOME = tool 'SonarQubeScanner'
 	ORGANIZATION = "KrishanGopalWipro"
-	PROJECT_NAME = "$PROJECT_NAME"
+	PROJECT_NAME = "Python-FastAPI-Demo"
 
     }
 
