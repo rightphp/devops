@@ -4,11 +4,25 @@ pipeline {
         registryCredential = 'DOCKER-HUB-ACCESS'
         imageFastAPI = "krishangopal/$JOB_NAME-fastapi"
 
+	SCANNER_HOME = tool 'SonarQubeScanner'
+	ORGANIZATION = "KrishanGopalWipro"
+	PROJECT_NAME = "$PROJECT_NAME"
+
     }
 
     agent any
 
     stages {
+
+	stage('SonarQube analysis') {
+           withSonarQubeEnv('SonarQube') { // If you have configured more than one global server connection, you can specify its name
+              sh '''$SCANNER_HOME/bin/sonar-scanner \
+	        -Dsonar.organization=$ORGANIZATION \
+                -Dsonar.projectKey=$PROJECT_NAME \
+                -Dsonar.sources=.'''
+           }
+        }
+
         stage('build') {
             steps {
 	       script {
