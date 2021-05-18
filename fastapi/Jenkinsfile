@@ -20,7 +20,7 @@ pipeline {
               script { 
 	         sh 'ls -la'
 	         sh 'pip install -r fastapi/fastapideta/requirements.txt'
-	         sh 'pytest'
+	         sh 'pytest fastapi/fastapideta/test_main.py'
               }
 	   }
         }
